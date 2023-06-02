@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  --bg-dark-color: 49, 43, 36;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  background-image: url("bgform.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+body::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+  color: #eceff3;
+  padding: 25px;
+  background: rgba(var(--bg-dark-color), .6);
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Rest of your existing CSS code */
+
+form h2 {
+  font-size: 32px;
+  text-align: center;
+  margin: 0px 0 30px;
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+form label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 7px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.group-date {
+  display: flex;
+}
+
+.date input {
+  width: 200px;
+}
+
+.group-date h2 {
+  margin-top: 24px;
+  text-align: center;
+  width: 50px;
+  margin-bottom: 0px;
+}
+
+form input,
+form select {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  background: none;
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
+  color: #eceff3;
+}
+
+::placeholder {
+  color: #eceff3;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #9a9a9a;
+}
+
+form input.error,
+form select.error {
+  border-color: #f91919;
+  background: #f9f0f1;
+}
+
+form small {
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  color: #f91919;
+}
+
+form .password i {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  top: 28px;
+  font-size: 13px;
+  line-height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}
+
+.submit-btn {
+  margin-top: 30px;
+}
+
+.submit-btn input {
+  color: white;
+  border: none;
+  height: auto;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 13px 0;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  background: none;
+  transition: 0.2s ease;
+  border: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+option {
+  color: black;
+}
+
+.submit-btn input:hover {
+  background-color: #ca8e46;
+}
